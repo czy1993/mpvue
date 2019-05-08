@@ -1,5 +1,5 @@
 
-const host = "https://rmall.ukelink.net"
+const host = "http://fly.pxklos.com"
 
 function request(url,method,data,header = {}){
     wx.showLoading({
