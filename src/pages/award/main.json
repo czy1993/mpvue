@@ -1,3 +1,6 @@
-{
-    "navigationBarTitleText": "开奖记录"
+{ 
+    "navigationBarTitleText": "开奖记录",  
+    "usingComponents":{
+        "i-count-down": "../../../../static/iview/count-down/index"
+    }
 }

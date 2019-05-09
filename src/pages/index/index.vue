@@ -14,14 +14,14 @@
         </view>
       </div>
       <div class="allKindID">
-        <div v-for="(item, index) in allKindLists" @click="changeList(item)">
+        <div v-for="(item,index) in allKindLists" :key="index" @click="changeList(item)">
           <img :src="'../../static/images/logo/'+item.classId+'.png'" alt="">
           <p  :class="(item.classId==classId)?'classIdActive':''">{{item.className}}</p>
           <span v-if="item.classId==classId" class="p_bottom"></span>
         </div>
       </div>
       <div class="allKind">
-          <div class="allKindList" v-for="(itemI,index) in kindLists" v-if="itemI.classId==classId">
+          <div class="allKindList" v-for="(itemI,index) in kindLists" :key="index"  v-if="(itemI.classId===classId)">
             <div class="allKindListleft">
               <img :src="'../../static/images/kindLogo/'+itemI.kindId+'.png'" alt="">
             </div>
