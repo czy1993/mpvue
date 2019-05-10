@@ -156,6 +156,9 @@ export default {
 <style lang="less">
 .personar{
   .personarHead{
+    position: fixed;
+    left: 0;
+    top: 0;
     height: 80rpx;
     background: linear-gradient(135deg,#132e7b,#00c9ca)!important;
     width: 100%;
@@ -165,8 +168,12 @@ export default {
     text-align: center;
     line-height: 80rpx;
     font-size:35rpx;
+    z-index: 10;
   }
   .personarTop{
+    position: relative;
+    top: 80rpx;
+    left: 0;
     height:220rpx;
     background: linear-gradient(135deg,#132e7b,#00c9ca)!important;
     width: 100%;
@@ -249,9 +256,11 @@ export default {
     }
   }
   .personarCard{
+    position: relative;
+    top: 80rpx;
+    left: 0;
     height: 90rpx;
     width: 100%;
-    position: relative;
     .moneyChange{
       position: absolute;
       left: 5%;
@@ -262,7 +271,7 @@ export default {
       justify-content: space-around;
       background: #fff;
       border-radius: 10rpx;
-      z-index: 20;
+      z-index: 9;
       box-shadow: darkgrey 2rpx 2rpx 10rpx 5rpx ;
       .centers{
         padding-top: 20rpx;

@@ -132,6 +132,9 @@ export default {
 <style lang="less" scoped>
 .award{
     .awardHead{
+        position: fixed;
+        left: 0;
+        top: 0;
         height: 80rpx;
         background: linear-gradient(135deg,#132e7b,#00c9ca)!important;
         width: 100%;
@@ -141,8 +144,12 @@ export default {
         text-align: center;
         line-height: 80rpx;
         font-size:35rpx;
+        z-index: 99;
     }
     .awardNav{
+        position: relative;
+        left: 0;
+        top: 80rpx;
         font-size: 24rpx;
         .awardNavList{
             padding:26rpx 26rpx 10rpx 26rpx;
